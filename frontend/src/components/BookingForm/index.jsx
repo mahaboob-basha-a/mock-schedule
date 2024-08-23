@@ -24,7 +24,7 @@ const BookingForm = () => {
             return;
         }
         const userData = { student_name: name, mentor_id: id, duration, cost: amount };
-        const sendSchedule = await axios.post('http://localhost:5000/api/bookings', userData);
+        const sendSchedule = await axios.post('https://mock-schedule.onrender.com/api/bookings', userData);
         if (sendSchedule.status === 201) {
             alert('Scheduled successfully');
             navigate('/bookings');
@@ -33,7 +33,7 @@ const BookingForm = () => {
     };
 
     const getMentor = useCallback(async () => {
-        const res = await axios.get(`http://localhost:5000/api/mentors/${id}/availability`);
+        const res = await axios.get(`https://mock-schedule.onrender.com/api/mentors/${id}/availability`);
         setMentor(res.data);
     }, [id]);
 

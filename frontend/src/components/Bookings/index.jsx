@@ -5,7 +5,7 @@ import './index.css'
 const Bookings = () => {
     const [bookingsData,setBookingsData] = useState([])
     const getBookings = async ()=>{
-        const res = await axios.get('http://localhost:5000/api/bookings')
+        const res = await axios.get('https://mock-schedule.onrender.com/api/bookings')
         const bookingsList = res.data
         setBookingsData(bookingsList.data)
     }
