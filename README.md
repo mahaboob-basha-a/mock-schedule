@@ -28,8 +28,8 @@ The project is organized into two main directories:
 
 1. **Clone the Repository:**
     ```bash
-    git clone https://github.com/your-username/MockSchedule.git
-    cd MockSchedule
+    git clone https://github.com/mahaboob-basha-a/mock-schedule.git
+    cd mockschedule
     ```
 
 2. **Backend Setup:**
@@ -66,13 +66,13 @@ The project is organized into two main directories:
 
 ### Mentor Endpoints
 
-- `GET /mentors`: Fetch all mentors.
-- `GET /mentors/:id/availability`: Fetch the availability of a specific mentor.
+- `GET /api/mentors`: Fetch all mentors.
+- `GET /api/mentors/:id/availability`: Fetch the availability of a specific mentor.
 
 ### Booking Endpoints
 
-- `POST /bookings`: Create a new booking.
-- `GET /bookings`: Retrieve bookings for a student or mentor.
+- `POST /api/bookings`: Create a new booking.
+- `GET /api/bookings`: Retrieve bookings for a student or mentor.
 
 ## Usage
 
@@ -83,9 +83,6 @@ The project is organized into two main directories:
 2. **Booking a Session:**
    - Select a mentor, choose a time slot based on their availability, and select your preferred session duration.
    - Enter your name and confirm the booking.
-
-3. **Payment:**
-   - After booking, you’ll be redirected to a payment page where you can confirm the cost based on your session duration and mentor selection.
 
 ## Database Schema
 
@@ -103,19 +100,5 @@ The project is organized into two main directories:
 - `duration`: INTEGER (30, 45, 60 minutes)
 - `is_premium`: INTEGER (0 or 1)
 - `cost`: INTEGER
-
-## Deployment
-
-You can deploy your application on any platform that supports Node.js, such as Heroku, Vercel, or AWS. Ensure that both frontend and backend servers are properly configured for deployment.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Thanks to the open-source community for providing tools and libraries that made this project possible.
-
----
 
 *This README was generated as part of the MockSchedule project.* 
