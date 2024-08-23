@@ -1,0 +1,12 @@
+a{
+    text-decoration: none;
+    color: #000;
+}
+.mentorlist-card{
+    border-bottom: 1px solid #00000040;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.mentorlist-card:hover{
+    background-color: #dddddd;
+}
